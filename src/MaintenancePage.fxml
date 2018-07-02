@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MaintenancePageController">
+   <center>
+      <VBox spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Mobile Time:" underline="true" />
+               </children>
+            </HBox>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="130.0" minWidth="81.0" prefWidth="123.0" />
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Employee Data" />
+                  <Button fx:id="employeeDataButton" disable="true" mnemonicParsing="false" text="Info" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane>
+               <children>
+                  <Label text="Employee Master Data" />
+                  <Button fx:id="employeeMasterDataButton" disable="true" mnemonicParsing="false" text="Info" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane>
+               <children>
+                  <Label text="Employee Time Data" />
+                  <Button fx:id="employeeTimeDataButton" disable="true" mnemonicParsing="false" text="Info" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <HBox>
+               <children>
+                  <Label text="Mobile Expense:" underline="true" />
+               </children>
+            </HBox>
+            <GridPane>
+               <children>
+                  <Label text="Employee Service" />
+                  <Button fx:id="employeeServiceButton" disable="true" mnemonicParsing="false" text="Info" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="130.0" minWidth="81.0" prefWidth="123.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane>
+               <children>
+                  <Label text="Trip Sync" />
+                  <Button fx:id="tripSyncButton" disable="true" mnemonicParsing="false" text="Info" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="130.0" minWidth="81.0" prefWidth="123.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane>
+               <children>
+                  <Label text="Silent Sync" />
+                  <Button fx:id="silentSyncButton" disable="true" mnemonicParsing="false" text="Info" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="130.0" minWidth="81.0" prefWidth="123.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" text="Back" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartPageController">
+   <bottom>
+      <HBox alignment="BOTTOM_RIGHT" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <Label text="V1.4.2" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="menuItemMaintenance" mnemonicParsing="false" onAction="#onMaintenanceClicked" text="Maintenance" />
+                        <MenuItem fx:id="menuItemSettings" mnemonicParsing="false" onAction="#onSettingsClicked" text="Settings" />
+                        <MenuItem mnemonicParsing="false" onAction="#onExitClicked" text="Exit" />
+                     </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnStart" mnemonicParsing="false" onAction="#onStartClicked" text="Start" />
+            <Text fx:id="statusText" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently processing:" visible="false" wrappingWidth="200.0">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

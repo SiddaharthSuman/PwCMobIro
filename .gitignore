@@ -1,0 +1,20 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.vscode/
+npm-debug.log*
+
+bin/
+.settings/
+.DS_Store
+src/Constants.java
+MobileIron Counter Apps List.txt
+MobileIron Counter Settings.txt
